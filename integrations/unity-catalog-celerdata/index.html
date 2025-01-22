@@ -12,13 +12,13 @@
         <meta name="author" content="unitycatalog">
       
       
-        <link rel="canonical" href="https://docs.unitycatalog.io/integrations/unity-catalog-xtable/">
+        <link rel="canonical" href="https://docs.unitycatalog.io/integrations/unity-catalog-celerdata/">
       
       
-        <link rel="prev" href="../unity-catalog-trino/">
+        <link rel="prev" href="../unity-catalog-spark/">
       
       
-        <link rel="next" href="../../deployment/">
+        <link rel="next" href="../unity-catalog-daft/">
       
       
       <link rel="icon" href="../../assets/images/unitycatalog_256x256.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>XTable - Unity Catalog</title>
+        <title>CelerData - Unity Catalog</title>
       
     
     
@@ -138,7 +138,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unity-catalog-xtable-integration" class="md-skip">
+        <a href="#celerdata-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -173,7 +173,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              XTable
+              CelerData
             
           </span>
         </div>
@@ -885,10 +885,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unity-catalog-celerdata/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CelerData
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -897,6 +917,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-requisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-unity-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploying Unity Catalog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-celerdata-cloud-byoc-to-unity-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting CelerData Cloud BYOC to Unity Catalog
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1011,30 +1078,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    XTable
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../unity-catalog-xtable/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1043,80 +1090,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pre-Requisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-server-property-for-using-s3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Server Property for using S3
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-unity-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run the Unity Server
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#register-the-xtable-synced-table-in-the-unity-catalog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Register the XTable-synced table in the Unity Catalog
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validating-the-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validating the results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#more-references" class="md-nav__link">
-    <span class="md-ellipsis">
-      More References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1494,52 +1467,25 @@
         <li class="md-nav__item">
   <a href="#pre-requisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Pre-Requisites
+      Pre-requisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-server-property-for-using-s3" class="md-nav__link">
+  <a href="#deploying-unity-catalog" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Server Property for using S3
+      Deploying Unity Catalog
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-the-unity-server" class="md-nav__link">
+  <a href="#connecting-celerdata-cloud-byoc-to-unity-catalog" class="md-nav__link">
     <span class="md-ellipsis">
-      Run the Unity Server
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#register-the-xtable-synced-table-in-the-unity-catalog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Register the XTable-synced table in the Unity Catalog
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validating-the-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validating the results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#more-references" class="md-nav__link">
-    <span class="md-ellipsis">
-      More References
+      Connecting CelerData Cloud BYOC to Unity Catalog
     </span>
   </a>
   
@@ -1560,7 +1506,7 @@
                   
 
   
-    <a href="https://github.com/unitycatalog/unitycatalog/edit/main/docs/integrations/unity-catalog-xtable.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/unitycatalog/unitycatalog/edit/main/docs/integrations/unity-catalog-celerdata.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1568,60 +1514,50 @@
   
 
 
-<h1 id="unity-catalog-xtable-integration">Unity Catalog XTable Integration<a class="headerlink" href="#unity-catalog-xtable-integration" title="Permanent link">&para;</a></h1>
-<p>This document walks through the steps to register an Apache XTable™ (Incubating) synced Delta table in Unity Catalog.</p>
-<p><a href="https://xtable.apache.org">Apache XTable</a> provides cross-table omni-directional interoperability between Apache Hudi,
-Apache Iceberg, and Delta Lake.</p>
-<h2 id="pre-requisites">Pre-Requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Source table(s) (Hudi/Iceberg) already written to external storage locations like S3/GCS/ADLS or local. In this
-    guide, we will use a S3 example.</li>
-<li>Follow the XTable installation guide <a href="https://xtable.apache.org/docs/setup">here</a></li>
-<li>Clone the Unity Catalog repository from <a href="https://github.com/unitycatalog/unitycatalog">here</a> and build the project
-    by following the steps outlined <a href="https://github.com/unitycatalog/unitycatalog?tab=readme-ov-file#prerequisites">here</a></li>
-</ol>
-<p>To sync a source Hudi/Iceberg table using XTable use the following:</p>
-<div class="highlight"><pre><span></span><code>sourceFormat:<span class="w"> </span>HUDI<span class="p">|</span>ICEBERG<span class="w"> </span><span class="c1"># choose only one</span>
-targetFormats:
-<span class="w">  </span>-<span class="w"> </span>DELTA
-datasets:
-<span class="w">    </span>tableBasePath:<span class="w"> </span>s3://path/to/source/data
-<span class="w">    </span>tableName:<span class="w"> </span>table_name
-<span class="w">    </span>partitionSpec:<span class="w"> </span>partitionpath:VALUE<span class="w"> </span>
-</code></pre></div>
-<p>Now, from your terminal under the cloned Apache XTable™ (Incubating) directory, run the sync process using the below
-command. This will generate the Delta Lake metadata.</p>
-<div class="highlight"><pre><span></span><code>java<span class="w"> </span>-jar<span class="w"> </span>xtable-utilities/target/incubator-xtable-utilities-0.1.0-SNAPSHOT-bundled.jar<span class="w"> </span>--datasetConfig<span class="w"> </span>my_config.yaml
-</code></pre></div>
-<blockquote>
-<p><strong>Note:</strong> At this point, if you check your bucket path, you will be able to see _delta_log directory with the JSON log.</p>
-</blockquote>
-<h2 id="configure-server-property-for-using-s3">Configure Server Property for using S3<a class="headerlink" href="#configure-server-property-for-using-s3" title="Permanent link">&para;</a></h2>
-<p>The server config file is at the location <code>etc/conf/server.properties</code>
-For enabling server to vend AWS temporary credentials to access S3 buckets, the following parameters need to be set:</p>
+<h1 id="celerdata-integration">CelerData Integration<a class="headerlink" href="#celerdata-integration" title="Permanent link">&para;</a></h1>
+<p>This document walks through the steps to use <a href="https://cloud.celerdata.com">CelerData Cloud BYOC</a> to query data
+governed by Unity Catalog OSS. <a href="https://celerdata.com">CelerData</a> is a lakehouse query engine that delivers data
+warehouse performance on open data lakes.</p>
+<h2 id="pre-requisites">Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>s3.bucketPath.i</code>: The S3 path of the bucket where the data is stored. Should be in the format <code>s3://&lt;bucket-name&gt;</code>.</li>
-<li><code>s3.accessKey.i</code>: The AWS access key, an identifier of temp credentials.</li>
-<li><code>s3.secretKey.i</code>: The AWS secret key used to sign API requests to AWS.</li>
-<li><code>s3.sessionToken.i</code>: THE AWS session token, used to verify that the request is coming from a trusted source.</li>
+<li>CelerData Cloud BYOC Environment: You can follow this <a href="https://cloud.celerdata.com">link</a> to deploy one with the
+    30-day free trial.</li>
 </ul>
-<h2 id="run-the-unity-server">Run the Unity Server<a class="headerlink" href="#run-the-unity-server" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>bin/start-uc-server
+<h2 id="deploying-unity-catalog">Deploying Unity Catalog<a class="headerlink" href="#deploying-unity-catalog" title="Permanent link">&para;</a></h2>
+<p>In this example, for simplicity, we query the data that comes with the  UC quickstart, which is stored on local disk.
+For this to work, you would need to deploy a UC server on every FE and BE/CN in your CelerData environment, under the
+same path.</p>
+<p>SSH into each FE and BE/CN node, install JDK 17, and under the same path, Clone, build, start Unity Catalog:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>openjdk-17-jdk
+
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/unitycatalog/unitycatalog.git
+
+<span class="nb">cd</span><span class="w"> </span>unitycatalog
+
+build/sbt<span class="w"> </span>package
+
+bin/start-uc-server
 </code></pre></div>
-<h2 id="register-the-xtable-synced-table-in-the-unity-catalog">Register the XTable-synced table in the Unity Catalog<a class="headerlink" href="#register-the-xtable-synced-table-in-the-unity-catalog" title="Permanent link">&para;</a></h2>
-<p>In a separate terminal, run the following commands to register the target table in Unity Catalog.</p>
-<div class="highlight"><pre><span></span><code>bin/uc<span class="w"> </span>table<span class="w"> </span>create<span class="w"> </span>--full_name<span class="w"> </span>unity.default.people<span class="w"> </span>--columns<span class="w"> </span><span class="s2">&quot;id INT, name STRING, age INT, city STRING, create_ts STRING&quot;</span><span class="w"> </span>--storage_location<span class="w"> </span>s3://path/to/source/data
+<h2 id="connecting-celerdata-cloud-byoc-to-unity-catalog">Connecting CelerData Cloud BYOC to Unity Catalog<a class="headerlink" href="#connecting-celerdata-cloud-byoc-to-unity-catalog" title="Permanent link">&para;</a></h2>
+<p>Now we connect CelerData Cloud BYOC to Unity Catalog through the CelerData Unity external catalog feature.</p>
+<div class="highlight"><pre><span></span><code><span class="k">create</span><span class="w"> </span><span class="k">external</span><span class="w"> </span><span class="k">catalog</span><span class="w"> </span><span class="n">uc</span><span class="w"> </span><span class="n">properties</span><span class="w"> </span><span class="p">(</span>
+<span class="ss">&quot;type&quot;</span><span class="o">=</span><span class="ss">&quot;deltalake&quot;</span><span class="p">,</span>
+<span class="ss">&quot;hive.metastore.type&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;unity&quot;</span><span class="p">,</span>
+<span class="ss">&quot;databricks.host&quot;</span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;http://127.0.0.1:8080&quot;</span><span class="p">,</span>
+<span class="ss">&quot;databricks.token&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;not-used&quot;</span><span class="p">,</span>
+<span class="ss">&quot;databricks.catalog.name&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;unity&quot;</span><span class="p">,</span>
+<span class="ss">&quot;aws.s3.region&quot;</span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;us-west-2&quot;</span><span class="p">);</span>
 </code></pre></div>
-<h2 id="validating-the-results">Validating the results<a class="headerlink" href="#validating-the-results" title="Permanent link">&para;</a></h2>
-<p>You can now read the table registered in Unity Catalog using the below command.</p>
-<div class="highlight"><pre><span></span><code>bin/uc<span class="w"> </span>table<span class="w"> </span><span class="nb">read</span><span class="w"> </span>--full_name<span class="w"> </span>unity.default.people
+<p>Check whether the connection is successful and query the data.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">-- show databases from the catalog</span>
+<span class="k">show</span><span class="w"> </span><span class="n">databases</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">uc</span><span class="p">;</span>
+
+<span class="c1">-- show tables from the `default` database</span>
+<span class="k">show</span><span class="w"> </span><span class="n">tables</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">uc</span><span class="p">.</span><span class="o">`</span><span class="k">default</span><span class="o">`</span><span class="p">;</span>
+
+<span class="c1">-- query</span>
+<span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">uc</span><span class="p">.</span><span class="o">`</span><span class="k">default</span><span class="o">`</span><span class="p">.</span><span class="n">marksheet</span><span class="p">;</span>
 </code></pre></div>
-<h2 id="more-references">More References<a class="headerlink" href="#more-references" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://medium.com/@kywe665/unity-catalog-oss-with-hudi-delta-iceberg-and-emr-duckdb-710ab8f8a7dc">Unity Catalog OSS with Hudi, Delta, Iceberg, and EMR + DuckDB</a></li>
-<li><a href="https://www.linkedin.com/pulse/getting-started-x-table-unity-catalog-universal-datalakes-soumil-shah-l3rpe/?trackingId=LfVbu4PjS5awh%2FRkjfeViA%3D%3D">Getting Started with X-Table and Unity Catalog | Universal Datalakes | Hands on Labs</a></li>
-<li><a href="https://www.youtube.com/watch?v=1SKQRrenBj4&amp;t=3s">Video: Getting Started with XTable and Unity Catalof</a></li>
-</ul>
 
 
 
@@ -1695,7 +1631,7 @@ For enabling server to vend AWS temporary credentials to access S3 buckets, the 
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../unity-catalog-trino/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trino">
+          <a href="../unity-catalog-spark/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Apache Spark">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1705,20 +1641,20 @@ For enabling server to vend AWS temporary credentials to access S3 buckets, the 
                 Previous
               </span>
               <div class="md-ellipsis">
-                Trino
+                Apache Spark
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../deployment/" class="md-footer__link md-footer__link--next" aria-label="Next: Deployment">
+          <a href="../unity-catalog-daft/" class="md-footer__link md-footer__link--next" aria-label="Next: Daft">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Deployment
+                Daft
               </div>
             </div>
             <div class="md-footer__button md-icon">
